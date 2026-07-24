@@ -11,13 +11,14 @@ import { profile } from "@/data/profile";
 import { Reveal } from "@/components/Reveal";
 import { MagneticButton } from "@/components/MagneticButton";
 import { TextReveal } from "@/components/TextReveal";
+import { withBasePath } from "@/lib/paths";
 
 export function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden border-t border-line">
       <div className="absolute inset-0">
         <Image
-          src="/images/surface-v2.png"
+          src={withBasePath("/images/surface-v2.png")}
           alt=""
           fill
           className="object-cover opacity-30"

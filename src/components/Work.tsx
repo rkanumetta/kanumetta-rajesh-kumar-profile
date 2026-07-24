@@ -6,6 +6,7 @@ import { projects } from "@/data/profile";
 import { Reveal } from "@/components/Reveal";
 import { TextReveal } from "@/components/TextReveal";
 import { SpotlightCard } from "@/components/SpotlightCard";
+import { withBasePath } from "@/lib/paths";
 
 export function Work() {
   const [featured, second, ...rest] = projects;
@@ -29,7 +30,7 @@ export function Work() {
               <article className="group relative flex h-full min-h-[420px] flex-col overflow-hidden">
                 <div className="relative min-h-[240px] flex-1">
                   <Image
-                    src="/images/hero-v2.png"
+                    src={withBasePath("/images/hero-v2.png")}
                     alt="Architectural light study for featured project"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-[1.06]"
@@ -72,7 +73,7 @@ export function Work() {
               <article className="group relative flex h-full min-h-[420px] flex-col overflow-hidden">
                 <div className="relative h-48">
                   <Image
-                    src="/images/surface-v2.png"
+                    src={withBasePath("/images/surface-v2.png")}
                     alt="Dark metal surface with cobalt light streak"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-[1.06]"

@@ -12,6 +12,7 @@ import { useRef } from "react";
 import { profile } from "@/data/profile";
 import { MagneticButton } from "@/components/MagneticButton";
 import { TextReveal } from "@/components/TextReveal";
+import { withBasePath } from "@/lib/paths";
 
 export function Hero() {
   const reduce = useReducedMotion();
@@ -35,7 +36,7 @@ export function Hero() {
         style={reduce ? undefined : { y: imageY }}
       >
         <Image
-          src="/images/hero-v2.png"
+          src={withBasePath("/images/hero-v2.png")}
           alt=""
           fill
           priority
