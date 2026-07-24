@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kanumetta Rajesh | MERN & Chatbot Engineer",
   description:
-    "8+ years building enterprise chat platforms, contact-center systems, and MERN applications. RingCentral, Allstate, Miracle.",
+    "9+ years building enterprise chat platforms, contact-center systems, and MERN applications. RingCentral, Allstate, Miracle.",
 };
 
 export default function RootLayout({
