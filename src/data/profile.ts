@@ -2,7 +2,7 @@ export const profile = {
   name: "Kanumetta Rajesh",
   shortName: "Rajesh",
   title: "MERN Stack & Chatbot Associate",
-  phone: "7989294331",
+  phone: "9493577653",
   email: "rkanumetta@gmail.com",
   github: "https://github.com/rkanumetta",
   medium: "https://medium.com/@rajesh92.k",
