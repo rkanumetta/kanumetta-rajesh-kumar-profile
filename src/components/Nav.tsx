@@ -4,6 +4,7 @@ import { useState } from "react";
 import { List, X } from "@phosphor-icons/react";
 import { profile } from "@/data/profile";
 import { MagneticButton } from "@/components/MagneticButton";
+import { withBasePath } from "@/lib/paths";
 
 const links = [
   { href: "#experience", label: "Experience" },
@@ -25,7 +26,7 @@ export function Nav() {
           <span className="relative h-8 w-8 overflow-hidden rounded-full border border-white/10">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/profile.png"
+              src={withBasePath("/images/profile.png")}
               alt=""
               className="h-full w-full object-cover object-top"
             />
